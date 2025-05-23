@@ -1,4 +1,4 @@
-# Mobile Mouse 3.6.0.4 Remote Code Execution (RCE) Exploit
+# Mobile Mouse 3.6.0.4 RCE Exploit
 
 Exploit by: [Chokri Hammedi](https://www.exploit-db.com/exploits/51010) (08/22)   
 Fixed by: [lof1](https://github.com/lof1sec/mobile_mouse_rce/tree/main) (10/23)  
