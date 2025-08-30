@@ -24,38 +24,6 @@ The original exploit (dated August 9, 2022) works by uploading a crafted executa
 2. Uses a **temporary file to store the generated executable**, which is cleaned up after use.
 3. **Built-in HTTP Server**: The script launches a background HTTP server to serve the generated (or user-supplied) payload. This removes the manual step of starting a separate HTTP server.
 
-### Latest Optimizations (2025)
-The script has been completely refactored and optimized with the following improvements:
-
-#### **Code Structure & Architecture**
-- **Object-Oriented Design**: Converted to a class-based architecture (`MobileMouseExploit`) for better organization and maintainability
-- **Type Hints**: Added comprehensive type annotations for better code documentation and IDE support
-- **Modular Functions**: Broke down functionality into smaller, focused methods with clear responsibilities
-- **Context Managers**: Implemented proper resource management using context managers for socket connections
-
-#### **Enhanced Error Handling & Robustness**
-- **Comprehensive Validation**: Added parameter validation for IP addresses, ports, and file paths
-- **Timeout Handling**: Implemented connection timeouts (30 seconds) and payload generation timeouts (60 seconds)
-- **Graceful Error Recovery**: Better exception handling with specific error messages for different failure scenarios
-- **Resource Cleanup**: Improved cleanup of temporary files and HTTP server resources
-
-#### **Security Improvements**
-- **Security Headers**: Added security headers to the HTTP server (X-Content-Type-Options, X-Frame-Options)
-- **Input Sanitization**: Enhanced parameter validation to prevent injection attacks
-- **Safe File Operations**: Improved temporary file handling with proper cleanup
-
-#### **Better User Experience**
-- **Structured Logging**: Implemented proper logging with timestamps and log levels
-- **Verbose Mode**: Added `--verbose` flag for detailed debugging output
-- **Clear Progress Indicators**: Better status messages showing exploit phases
-- **Helpful Error Messages**: More descriptive error messages to aid troubleshooting
-
-#### **Performance & Reliability**
-- **Connection Reuse**: HTTP server configured with address reuse for better reliability
-- **Background Processing**: HTTP server runs in daemon thread for non-blocking operation
-- **Memory Efficiency**: Better memory management with proper resource cleanup
-- **Process Management**: Improved subprocess handling with timeouts and error checking
-
 ### Flexible Parameters:
 Added command-line arguments to specify:
 
